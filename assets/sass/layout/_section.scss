@@ -1,0 +1,70 @@
+@use "../abstracts/variables";
+
+.img-collage {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    justify-content: left;
+
+    &__rectangle {
+        background-color: $blue-jeans;
+        width: 600px;
+        height: 250px;
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__img2 {
+        scale: (0.6);
+        height: auto;
+        position: absolute;
+        right: -15%;
+        top: -52%;
+    }
+
+    &__img3 {
+        rotate: 90deg;
+        scale: (0.20);
+        position: absolute;
+        top: -77%;
+        left: 5%;
+        z-index: 1;
+    }
+
+    &__img4 {
+        scale: (0.5);
+        position: absolute;
+        left: -23%;
+        top: -30%;
+    }
+
+}
+
+.secondary-content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+
+    &__subcontainer {
+        display: flex;
+        flex-direction: column;
+        width: 24%;
+        padding: 1rem 1rem;
+        margin-left: 1rem;
+    }
+
+    &__title {
+        font-family: variables.$Mono-font;
+        font-size: 2rem;
+        font-weight: 400;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    &__text {
+        font-family: variables.$Roboto-font;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}

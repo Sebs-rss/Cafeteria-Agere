@@ -10,30 +10,68 @@ By Sebastián Sánchez, 07/'24' -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <title>Agere Cafe</title>
+    <title>Agere Café</title>
 </head>
-<body>
-    <div class="registration-container">
-        <header class="header">
-            <img src="assets/img/logos/adl.png" alt="Blog FrontEnd Logo" class="header__logo">
-            <h1 class="header__title">Blog FrontEnd</h1>
-        </header>
-        <main class="main">
-            <h2 class="main__title">Regístrate ¡Es gratis!</h2>
-            <form class="form">
-                <input type="text" class="form__input" placeholder="Nombre">
-                <input type="text" class="form__input" placeholder="Apellido">
-                <input type="email" class="form__input" placeholder="Email">
-                <input type="password" class="form__input" placeholder="Contraseña">
-                <input type="password" class="form__input" placeholder="Confirma tu contraseña">
-                <button type="submit" class="form__button">Crea tu cuenta</button>
-                <button type="button" class="form__google-button"> 
-                    <img src="assets/img/logos/google.png" alt="Google Logo"> Regístrate con Google
-                </button>
-            </form>
-            <p class="main__text">¿Ya tienes una cuenta? <a href="#" class="main__link">Inicia sesión</a></p>
-        </main>
-    </div>
+<body> 
+    <header class="header">
+        <nav class="navbar__container">
+            <div class="navbar__logo-container">
+                <a  href="#">
+                    <img src="./assets/img/logo.png" class="navbar__logo"/>
+                </a>
+                <span class="navbar__title"></span>
+            </div>
+            <span class="navbar__nav-item">Acerca de</span>
+            <span class="navbar__nav-item">Tienda</span>
+        </nav>
+        <div class="navbar__buttons-containter">
+            <button type="button" class="button button__link button--primary">Iniciar sesión</button>
+            <button type="button" class="button button__link button--secondary">Crear tu cuenta</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main__img-container">
+            <img src="./assets/img/img-1.png" class="main__img" alt="una persona comprando un café">
+            <div class="indicadores">
+                <div class="indicadores__col">
+                    <span class="indicadores__number">+50</span>
+                    <span class="indicadores__text">Variedades de café</span>
+                </div>
+                <div class="indicadores__col">
+                    <span class="indicadores__number">20</span>
+                    <span class="indicadores__text">Países diferentes</span>
+                </div>
+                <div class="indicadores__col">
+                    <span class="indicadores__number">+1.000</span>
+                    <span class="indicadores__text">Accesorios para hacer el mejor café</span>
+                </div>
+            </div>
+        </section>
+        <div class="main__info">
+            <span class="main__title">Café <br>Agere</span>
+            <span class="main__subtitle">Coffee Shop</span>
+            <div class="main__square-container">
+                <div class="main__square-red">
+                    <span>🡆</span>
+                </div>
+                <div class="main__square-yellow">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="secondary-content">
+        <div class="secondary-content__subcontainer">
+            <span class="secondary-content__title">Ven a conocernos</span>
+            <span class="secondary-content__txt">Disfruta de una gran experiencia tomando un café o un té dentro de nuestra tienda, o si lo prefieres puedes comprar en línea en nuestros cafés para disfrutarlos en casa.</span>
+        </div>
+        <section class="img-collage">
+            <img src="./assets/img/img-2.png" class="img-collage__img2" alt="máquina spresso">
+            <img src="./assets/img/img-3.png" class="img-collage__img3" alt="granos de café">
+            <img src="./assets/img/img-4.png" class="img-collage__img4" alt="un mapa">
+            <div class="img-collage__rectangle"></div>
+        </section>
+    </section>
+
     <script src="assets/js/main.js"></script>
 </body>
 </html>

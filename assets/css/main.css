@@ -1,1 +1,248 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100vw;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+  font-family: "Roboto", sans-serif;
+}
+.navbar__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar__nav-item {
+  font-size: 1rem;
+  color: grey;
+  padding: 1.5rem;
+}
+.navbar__nav-item:hover {
+  color: #000;
+  font-weight: bold;
+}
+.navbar__logo-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.navbar__logo {
+  height: 40px;
+  width: auto;
+}
+.navbar__buttons-containter {
+  display: flex;
+  flex-direction: row;
+  width: 25%;
+  justify-content: space-between;
+  gap: 20px;
+  margin-right: 1rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+.main__img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.main__img {
+  display: flex;
+  width: 100;
+}
+.main__info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+.main__title {
+  font-family: "PT Mono", monospace;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.main__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main__square-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.main__square-red {
+  font-size: 4rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4572e;
+  color: white;
+  position: relative;
+}
+.main__square-yellow {
+  font-size: 4rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1dd7b;
+  position: relative;
+  left: 20px;
+  bottom: 80px;
+  z-index: -1;
+}
+
+.indicadores {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  align-self: flex-end;
+  padding: 10px 20px;
+  border-radius: 1em 0 0 0;
+}
+.indicadores__col {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 50%;
+}
+.indicadores__number {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.indicadores__text {
+  font-size: 1rem;
+  display: block;
+}
+
+.img-collage {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  justify-content: left;
+}
+.img-collage__rectangle {
+  background-color: #5fa5ea;
+  width: 600px;
+  height: 250px;
+  position: absolute;
+  z-index: -1;
+}
+.img-collage__img2 {
+  scale: 0.6;
+  height: auto;
+  position: absolute;
+  right: -15%;
+  top: -52%;
+}
+.img-collage__img3 {
+  rotate: 90deg;
+  scale: 0.2;
+  position: absolute;
+  top: -77%;
+  left: 5%;
+  z-index: 1;
+}
+.img-collage__img4 {
+  scale: 0.5;
+  position: absolute;
+  left: -23%;
+  top: -30%;
+}
+
+.secondary-content {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2rem;
+}
+.secondary-content__subcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  padding: 1rem 1rem;
+  margin-left: 1rem;
+}
+.secondary-content__title {
+  font-family: "PT Mono", monospace;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.secondary-content__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.button {
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  margin-block: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-width: 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid #bddfc7;
+  font-family: "Poppins", sans-serif;
+}
+.button__link {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+
+.button--primary {
+  background-color: #fff;
+  color: #989797;
+  border-color: #989797;
+  border-radius: 0;
+}
+.button--primary:hover {
+  background-color: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+.button--secondary {
+  background-color: #4ca866;
+  color: #fff;
+  border-radius: 0;
+}
+.button--secondary:hover {
+  background-color: #9dcfab;
+  color: #000;
+}/*# sourceMappingURL=main.css.map */
